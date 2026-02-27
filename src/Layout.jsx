@@ -4,7 +4,8 @@ import { createPageUrl } from '@/utils';
 import { motion, AnimatePresence } from 'framer-motion';
 import Footer from './components/Footer';
 
-const LOGO_URL = 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_699fb162720769f9a884cf16/80fc894a6_ChatGPTImageFeb26202612_44_29PM.png';
+const LOGO_URL =
+  'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_699fb162720769f9a884cf16/80fc894a6_ChatGPTImageFeb26202612_44_29PM.png';
 
 const NAV_ITEMS = [
   { name: 'Home', page: 'Home' },
@@ -78,10 +79,23 @@ export default function Layout({ children, currentPageName }) {
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
               className="md:hidden relative z-50 w-10 h-10 flex flex-col items-center justify-center gap-1.5"
+              aria-label="Toggle menu"
             >
-              <span className={`block w-6 h-[1.5px] bg-[#f5f0eb] transition-all duration-300 ${mobileOpen ? 'rotate-45 translate-y-[4.5px]' : ''}`} />
-              <span className={`block w-6 h-[1.5px] bg-[#f5f0eb] transition-all duration-300 ${mobileOpen ? 'opacity-0' : ''}`} />
-              <span className={`block w-6 h-[1.5px] bg-[#f5f0eb] transition-all duration-300 ${mobileOpen ? '-rotate-45 -translate-y-[4.5px]' : ''}`} />
+              <span
+                className={`block w-6 h-[1.5px] bg-[#f5f0eb] transition-all duration-300 ${
+                  mobileOpen ? 'rotate-45 translate-y-[4.5px]' : ''
+                }`}
+              />
+              <span
+                className={`block w-6 h-[1.5px] bg-[#f5f0eb] transition-all duration-300 ${
+                  mobileOpen ? 'opacity-0' : ''
+                }`}
+              />
+              <span
+                className={`block w-6 h-[1.5px] bg-[#f5f0eb] transition-all duration-300 ${
+                  mobileOpen ? '-rotate-45 -translate-y-[4.5px]' : ''
+                }`}
+              />
             </button>
           </div>
         </div>
@@ -107,7 +121,9 @@ export default function Layout({ children, currentPageName }) {
                   <Link
                     to={createPageUrl(item.page)}
                     className={`font-serif text-3xl tracking-wide transition-colors duration-300 ${
-                      currentPageName === item.page ? 'text-[#c9a96e]' : 'text-[#f5f0eb]'
+                      currentPageName === item.page
+                        ? 'text-[#c9a96e]'
+                        : 'text-[#f5f0eb]'
                     }`}
                   >
                     {item.name}
@@ -131,10 +147,7 @@ export default function Layout({ children, currentPageName }) {
         )}
       </AnimatePresence>
 
-      <main>
-        {children}
-      </main>
-
+      <main>{children}</main>
       <Footer />
     </div>
   );
