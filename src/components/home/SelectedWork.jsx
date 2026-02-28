@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import { createPageUrl } from '@/utils';
-import AnimatedSection from '../AnimatedSection';
+import { createPageUrl } from '../../utils.js';
+import AnimatedSection from '../AnimatedSection.jsx';
 import { motion } from 'framer-motion';
 
 const projects = [

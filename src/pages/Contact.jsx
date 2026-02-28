@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import AnimatedSection from '../components/AnimatedSection';
+import AnimatedSection from '../components/AnimatedSection.jsx';
 import { motion } from 'framer-motion';
 
 export default function Contact() {

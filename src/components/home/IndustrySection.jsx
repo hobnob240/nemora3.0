@@ -1,4 +1,4 @@
-import AnimatedSection from '../AnimatedSection';
+import AnimatedSection from '../AnimatedSection.jsx';
 import { Building2, Home, Briefcase, Users, UtensilsCrossed, HardHat } from 'lucide-react';
 
 const industries = [

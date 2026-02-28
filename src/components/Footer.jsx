@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { createPageUrl } from '@/utils';
+import { createPageUrl } from '../utils.js';
 
 const LOGO_URL = 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_699fb162720769f9a884cf16/80fc894a6_ChatGPTImageFeb26202612_44_29PM.png';
 

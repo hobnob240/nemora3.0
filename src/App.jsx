@@ -1,11 +1,11 @@
 import { HashRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom';
-import Layout from './Layout';
+import Layout from './Layout.jsx';
 
-import Home from './pages/Home';
-import About from './pages/About';
-import Work from './pages/Work';
-import Services from './pages/Services';
-import Contact from './pages/Contact';
+import Home from './pages/Home.jsx';
+import About from './pages/About.jsx';
+import Work from './pages/Work.jsx';
+import Services from './pages/Services.jsx';
+import Contact from './pages/Contact.jsx';
 
 function PageShell() {
   const { pathname } = useLocation();

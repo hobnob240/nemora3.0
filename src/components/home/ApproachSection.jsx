@@ -1,4 +1,4 @@
-import AnimatedSection from '../AnimatedSection';
+import AnimatedSection from '../AnimatedSection.jsx';
 import { motion } from 'framer-motion';
 
 const steps = [

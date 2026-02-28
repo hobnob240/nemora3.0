@@ -1,12 +1,5 @@
-// Simple route helper used throughout the project
-export function createPageUrl(pageName) {
-  const routes = {
-    Home: '/',
-    About: '/about',
-    Work: '/work',
-    Services: '/services',
-    Contact: '/contact',
-  };
-
-  return routes[pageName] || '/';
+export function createPageUrl(page) {
+  const p = (page || '').toString().toLowerCase();
+  if (p === 'home') return '/';
+  return `/${p}`;
 }

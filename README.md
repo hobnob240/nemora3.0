@@ -1,18 +1,10 @@
-# NEMORA (GitHub Pages)
+# NEMORA (GitHub Pages Ready)
 
-This is a React + Vite + Tailwind project.
-
-## Local run
-
+## Local dev
 ```bash
 npm install
 npm run dev
 ```
 
-## Build
-
-```bash
-npm run build
-```
-
-GitHub Pages deployment is handled by the workflow in `.github/workflows/deploy.yml`.
+## Deploy
+Push to `main` and GitHub Actions deploys to Pages.
